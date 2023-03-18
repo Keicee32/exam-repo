@@ -11,7 +11,7 @@ resource "kubernetes_ingress_v1" "voting-ingress" {
 
   spec {
     rule {
-      host = ""
+      host = "voting-app.devopsproject.ml"
       http {
         path {
           backend {
@@ -42,7 +42,7 @@ resource "kubernetes_ingress_v1" "micro-ingress" {
 
   spec {
     rule {
-      host = ""
+      host = "cart.devopsproject.ml"
       http {
         path {
           backend {
